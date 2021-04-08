@@ -267,6 +267,7 @@ png_push_read_chunk(png_structrp png_ptr, png_inforp info_ptr)
       png_ptr->zstream.avail_out =
           (uInt) PNG_ROWBYTES(png_ptr->pixel_depth,
           png_ptr->iwidth) + 1;
+      
       png_ptr->zstream.next_out = png_ptr->row_buf;
       return;
    }
